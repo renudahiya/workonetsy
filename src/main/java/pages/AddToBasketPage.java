@@ -11,7 +11,7 @@ public class AddToBasketPage {
     }
     public CartPage clickAddToBasket() {
         driver.findElement(addToBasket).click();
-                return new CartPage(driver);
+        return new CartPage(driver);
     }
 
 }

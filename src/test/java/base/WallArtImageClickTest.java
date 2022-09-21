@@ -25,8 +25,13 @@ public class WallArtImageClickTest extends BaseTest{
              "heading does not match");
 
 }
-@Test
+    @Test
     public void testUsingApplitoolsEyes(){
+    WallArtPage page=homePage.clickWallArtImage();
+    System.out.println("I am testing using Applitools Eyes!");
+    AddToBasketPage basketPage=page.clickShopThisItem();
+    CartPage cartPage=basketPage.clickAddToBasket();
+    validateWindow();
 
 }
 }
